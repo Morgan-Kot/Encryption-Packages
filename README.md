@@ -64,13 +64,13 @@ but here it's just seperated into 2 .epacs: encrypter.epac and decrypter.epac
 
 ## Encrypter.epac example:
 ```python
-# encrypter.py
-NAME = "STWE01 (Stewie)"
-DESCRIPTION = "Standard Two way Encryption No.1 - Tokenized feedback state encryption"
-CREATOR = "Morgan Kot"
-YEAR = "2026"
-COPYRIGHT = "N/A"
-GITHUB_URL = "[https://github.com/Morgan-Kot/Encrypt-plus](https://github.com/Morgan-Kot/Encrypt-plus)"
+# Encrypter Example - This method in called STWE01
+NAME = "Method Name"
+DESCRIPTION = "A description about your encipher method"
+CREATOR = "Your name"
+YEAR = "Year Created"
+COPYRIGHT = "Copyright?"
+GITHUB_URL = "Github Url is not required, but recommended"
 
 
 def encrypt(plaintext: str) -> str:
@@ -98,7 +98,7 @@ def encrypt(plaintext: str) -> str:
 ```
 ## Decrypter.epac example:
 ```python
-# decrypter.py
+# decryption.epac example
 def decrypt(ciphertext: str) -> str:
     if not ciphertext.strip():
         return ""
@@ -121,3 +121,5 @@ def decrypt(ciphertext: str) -> str:
 
     return out_bytes.decode('utf-8', errors='replace')
 ```
+These .epac have to be placed in the same folder. 
+And the parent folder has to placed inside epac-methods
